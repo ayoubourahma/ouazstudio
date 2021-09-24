@@ -1,0 +1,58 @@
+/*--------------------------RESPONISVE AREA @media------------------------------------------*/
+
+@media (max-width: 1060px) {
+  header .menu-btn {
+    display: block;
+  }
+
+  header .menu {
+    position: fixed;
+    background: #1483d5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 50vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.6s;
+    transition-property: right;
+  }
+
+  header .menu.active {
+    right: 0;
+    transition: 0.6s;
+    transition-property: left;
+  }
+  header .menu .fa-times {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+  header .menu a {
+    display: block;
+    font-size: 30px;
+    margin: 20px;
+    padding: 0 15px;
+    text-align: left;
+  }
+  /*--------------------------Game Grid------------------------------------------*/
+  .games-grid li {
+    width: 500px;
+  }
+  .hit-game li {
+    width: 600px;
+  }
+  /*----------------header -------------------*/
+  .banner-header-btn ul {
+    flex-direction: column;
+  }
+  .banner-header-btn ul li {
+    margin: 20px 5px;
+  }
+  /*----------------header -------------------*/
+  .header2 {
+    border-bottom: 5px dashed #0000004a;
+  }
+}
+/*--------------------------RESPONISVE AREA @media------------------------------------------*/
