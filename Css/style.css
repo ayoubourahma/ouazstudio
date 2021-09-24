@@ -384,6 +384,7 @@ footer {
   text-align: center;
   height: 100%;
   padding-top: 15%;
+  width: 100%;
 }
 .banner-header-info img {
   width: 30%;
@@ -401,6 +402,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 5px;
+  margin-bottom: 200px;
 }
 .banner-header-btn ul {
   display: flex;
