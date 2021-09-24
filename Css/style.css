@@ -200,6 +200,7 @@ header.sticky .logo {
 .overlay-button a {
   margin: 5%;
   display: none;
+  width: 100%;
 }
 .overlay-button a img {
   width: 100%;
