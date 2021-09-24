@@ -63,7 +63,7 @@ header .menu-btn {
 .banner {
   position: relative;
   width: 100%;
-  background: url(../imgs/header-bg.jpg) no-repeat;
+  background: url(../imgs/BG1.png) no-repeat;
   background-size: cover;
   display: flex;
   background-attachment: scroll;
