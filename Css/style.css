@@ -158,6 +158,7 @@ header.sticky .logo {
   display: block;
   text-align: center;
   width: 100%;
+  background-image: linear-gradient(to right, #f7f7f7, #ffb703, #f7f7f7);
 }
 .xop-box {
   width: 100%;
@@ -398,7 +399,9 @@ footer {
 }
 .banner-header-btn ul {
   display: flex;
-  flex-direction: inherit;
+  flex-direction: initial;
+  width: 100%;
+  justify-content: center;
 }
 .banner-header-btn ul li {
   margin: 0 5px;
