@@ -43,6 +43,9 @@
   .hit-game li {
     width: 800px;
   }
+  .overlay-button a {
+    width: 60%;
+  }
   /*----------------header -------------------*/
   .banner-header-btn ul {
     flex-direction: column;
