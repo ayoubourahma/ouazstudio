@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
+  transition: top 0.6s;
   padding: 25px 30px;
   z-index: 10000;
 }
@@ -96,12 +96,114 @@ header.sticky .logo {
   margin-top: 50px;
 }
 
-/* header2 */
+.hit-game-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*-----------------------*/
+  background-image: linear-gradient(to right, #054f64, #19b0da 20%);
+  height: 80vh;
+  position: relative;
+  margin-bottom: 100px;
+}
 
+.hit-game-section::after {
+  content: " ";
+  width: 100%;
+  height: 30rem;
+  position: absolute;
+  bottom: -180px;
+  background-color: #f7f7f7;
+  transform: skewY(-15deg);
+}
+
+.hit-img-btn {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: end;
+  flex-direction: row;
+  top: 35%;
+}
+.hit-img {
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 0px 20px;
+}
+.hit-img img {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+.hit-about-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-game {
+  display: flex;
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-game h1 {
+  margin-top: 10%;
+  font-weight: bold;
+  font-size: 40px;
+  color: #3b3544;
+}
+
+.about-game em {
+  position: relative;
+  text-align: left;
+  margin-top: 10%;
+  color: #3b3544;
+  font-size: 20px;
+}
+
+.store-btn {
+  position: relative;
+  left: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.store-btn a {
+  margin: 20px;
+}
+
+.store-btn a img {
+  width: 200px;
+  box-shadow: 0px 0px 20px #000;
+  border-radius: 15px;
+}
+/* header2 */
+.games-header {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  left: 22%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+}
+.games-header h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
 .header2 {
   text-align: center;
   border-bottom: 2px dashed #0000004a;
-  padding-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -128,6 +230,8 @@ header.sticky .logo {
   display: block;
   text-align: center;
   width: 100%;
+  z-index: 2;
+  position: relative;
 }
 
 .games-grid:after {
@@ -147,24 +251,6 @@ header.sticky .logo {
   padding: 20px;
 }
 
-.hit-game li {
-  width: 500px;
-  display: inline-block;
-  margin: 5px;
-  margin-bottom: 5px;
-  background: #ffb703;
-  padding: 20px;
-}
-
-.hit-game {
-  margin: 20px 0 0 0;
-  padding: 0;
-  list-style: block;
-  display: block;
-  text-align: center;
-  width: 100%;
-  background-image: linear-gradient(to right, #f7f7f7, #ffb703, #f7f7f7);
-}
 .xop-box {
   width: 100%;
   height: 100%;
@@ -180,7 +266,6 @@ header.sticky .logo {
 
 .game-img-1 {
   width: inherit;
-  border-radius: 40px;
 }
 
 .overlay-button {
@@ -229,15 +314,12 @@ header.sticky .logo {
   font-size: 100px;
   margin-bottom: 10px;
   color: #fff;
-  height: 120px;
 }
 .kpi-section ul li p {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
   color: #fff;
   font-weight: bolder;
-  text-align: center;
-  height: 50px;
 }
 /*--------------TIMLINE---------------*/
 .timeline-area {
@@ -388,7 +470,6 @@ footer {
   text-align: center;
   height: 100%;
   padding-top: 15%;
-  width: 100%;
 }
 .banner-header-info img {
   width: 30%;

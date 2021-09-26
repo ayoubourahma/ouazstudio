@@ -80,5 +80,47 @@
   .header2 {
     border-bottom: 5px dashed #0000004a;
   }
+
+  /*-------------------Hit game section-----------------*/
+  .hit-game-section {
+    height: 30vh;
+    margin-bottom: 40vh;
+  }
+
+  .hit-game-section::after {
+    height: 35rem;
+    bottom: -185px;
+    transform: skewY(-20deg);
+  }
+
+  .hit-img-btn {
+    width: auto;
+    flex-direction: column;
+  }
+  .about-game h1 {
+    font-size: 80px;
+  }
+  .about-game em {
+    margin-top: 0%;
+    font-size: 35px;
+  }
+  .store-btn {
+    left: 0%;
+  }
+  .store-btn a img {
+    width: 400px;
+    border-radius: 50px;
+  }
+  .hit-img img {
+    width: 100%;
+    height: 700px;
+  }
+  .games-header {
+    right: 22%;
+  }
+  .games-header h1 {
+    font-size: 65px;
+  }
 }
+
 /*--------------------------RESPONISVE AREA @media------------------------------------------*/
