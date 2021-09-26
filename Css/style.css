@@ -297,6 +297,7 @@ header.sticky .logo {
   top: 0;
   left: 0;
   width: 100%;
+  padding-bottom: 50px;
 }
 .kpi-section ul {
   display: flex;
