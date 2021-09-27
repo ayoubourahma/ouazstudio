@@ -122,5 +122,75 @@
     font-size: 65px;
   }
 }
+@media only screen and (min-width: 1060px) {
+  /*--------------TIMLINE---------------*/
+  .timeline::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #737373;
+  }
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
 
+  .timeline ul li::after {
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #737373;
+    border-radius: 50%;
+    top: 0;
+  }
+
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+
+  .timeline ul li:hover::after {
+    background-color: #393939;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 0px 10px #000;
+    transition: 0.6s;
+  }
+  .timeline ul li:nth-child(odd):hover {
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 20px 0px 20px 20px;
+    transition: 0.6s;
+  }
+  .timeline ul li:nth-child(even):hover {
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 0px 20px 20px 20px;
+    transition: 0.6s;
+  }
+
+  .timeline-content .date-time {
+    color: #000;
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+  }
+}
 /*--------------------------RESPONISVE AREA @media------------------------------------------*/
