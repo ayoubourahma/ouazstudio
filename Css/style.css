@@ -373,63 +373,7 @@ header.sticky ul li a:hover {
   line-height: 2px;
 }
 /*-------------------team------------------*/
-.team-section {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.team-section ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  flex-direction: row;
-  list-style: none;
-}
-.team-section ul li {
-  width: 100%;
-  text-align: center;
-}
-.team-section ul li img {
-  width: 150px;
-  border-radius: 50%;
-  border: 3px solid #1483d5;
-}
-.team-section ul li h3 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-top: 10%;
-}
-.team-section ul li p {
-  font-size: 20px;
-  font-weight: 200;
-}
-.team-leader {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.team-leader img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 2%;
-  border: 3px solid #1483d5;
-}
-.team-leader h3 {
-  font-size: 30px;
-  font-weight: 500;
-}
-.team-leader p {
-  font-size: 20px;
-  font-weight: 200;
-}
+
 /*---------------FOOTER-----------------*/
 footer {
   width: 100%;
@@ -453,9 +397,20 @@ footer {
 }
 
 .footer-content p {
-  margin-bottom: 50px;
   font-size: 20px;
   color: #fff;
+}
+.email-footer {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  width: 30%;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 50px;
+  margin-bottom: 5%;
+  font-size: 20px;
+  font-weight: 300;
 }
 .socilas {
   display: flex;
@@ -488,6 +443,7 @@ footer {
 }
 .bottom-footer p {
   color: #fff;
+  width: 100%;
 }
 /*---------------------Banner-Header----------------------*/
 .banner-header-info {
