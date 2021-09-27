@@ -121,6 +121,78 @@
   .games-header h1 {
     font-size: 65px;
   }
+
+  /*---------------KPI SECTION----------------*/
+  .kpi-section ul {
+    padding-bottom: 0%;
+    flex-direction: column;
+  }
+  .kpi-section ul li {
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+  }
+  .kpi-section ul li:last-child {
+    margin-bottom: 0%;
+  }
+  .kpi-section ul li:nth-child(odd) {
+    background-color: #00abff;
+  }
+
+  .kpi-section ul li p {
+    font-size: 40px;
+  }
+  .kpi-section ul li i {
+    font-size: 200px;
+  }
+  /*-------------TEAM SECTION------------*/
+  .team-section ul {
+    flex-direction: column;
+  }
+  .team-section ul li img {
+    width: 400px;
+  }
+  .team-section ul li h3 {
+    font-size: 70px;
+    font-weight: 300;
+    margin: 0% 0 0 0;
+  }
+  .team-section ul li p {
+    font-size: 50px;
+    margin-bottom: 10%;
+  }
+  .team-leader img {
+    width: 500px;
+    height: 500px;
+  }
+  .team-leader h3 {
+    font-size: 70px;
+    font-weight: 300;
+    margin: 0% 0 0 0;
+  }
+  .team-leader p {
+    font-size: 50px;
+    margin-bottom: 10%;
+  }
+
+  /*--------------FOOTER SECTION-----------------*/
+  .bottom-footer {
+    flex-direction: column-reverse;
+  }
+  .footer-content h1 {
+    font-size: 80px;
+    margin: 0px;
+    font-weight: 300;
+  }
+  .bottom-footer p {
+    color: #fff;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .bottom-footer a {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 @media only screen and (min-width: 1060px) {
   /*--------------TIMLINE---------------*/

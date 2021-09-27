@@ -24,6 +24,7 @@ header {
   z-index: 10000;
 }
 header.sticky {
+  display: flex;
   transition: 1s;
   padding: 15px 10px;
   /*background-image: linear-gradient(#000, rgba(0, 0, 0, 0.394));*/
@@ -111,9 +112,9 @@ header.sticky ul li a:hover {
 .hit-game-section::after {
   content: " ";
   width: 100%;
-  height: 30rem;
+  height: 100%;
   position: absolute;
-  bottom: -180px;
+  top: 40%;
   background-color: #f7f7f7;
   transform: skewY(-15deg);
 }
@@ -305,6 +306,7 @@ header.sticky ul li a:hover {
   align-items: center;
   margin-top: 50px;
   padding-bottom: 50px;
+  flex-direction: row;
 }
 .kpi-section ul li {
   list-style: none;
@@ -383,26 +385,59 @@ header.sticky ul li a:hover {
   align-items: center;
   margin-top: 50px;
   padding-bottom: 50px;
+  flex-direction: row;
+  list-style: none;
 }
 .team-section ul li {
-  list-style: none;
-  width: 21%;
+  width: 100%;
   text-align: center;
 }
-.team-section ul li i {
-  font-size: 100px;
-  margin-bottom: 10px;
+.team-section ul li img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #1483d5;
+}
+.team-section ul li h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10%;
 }
 .team-section ul li p {
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.team-leader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.team-leader img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2%;
+  border: 3px solid #1483d5;
+}
+.team-leader h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.team-leader p {
+  font-size: 20px;
+  font-weight: 200;
 }
 /*---------------FOOTER-----------------*/
 footer {
   width: 100%;
   height: auto;
-  background-color: #00abff;
-  padding-top: 40px;
+  /*background-color: #00abff;*/
+  background-image: url(../imgs/BG1.png);
+  padding-top: 10%;
+  background-size: cover;
 }
 .footer-content {
   display: flex;
@@ -443,11 +478,13 @@ footer {
   width: 100%;
   position: relative;
   padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .bottom-footer a {
   text-decoration: none;
   color: #fff;
-  margin-left: 70%;
 }
 .bottom-footer p {
   color: #fff;
